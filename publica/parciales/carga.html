@@ -1,0 +1,14 @@
+<ng-csv-import
+      class="import"
+      content="csv.content"
+      header="csv.header"
+      header-visible="csv.headerVisible"
+      separator="csv.separator"
+      separator-visible="csv.separatorVisible"
+      result="csv.result"
+      encoding="csv.encoding"
+      encoding-visible="csv.encodingVisible"></ng-csv-import>
+
+<div class="block row"  ng-if="csv.result">
+  Ok.
+</div>

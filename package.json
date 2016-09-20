@@ -1,0 +1,32 @@
+{
+  "name": "GoberTec",
+  "version": "0.0.1",
+  "description": "App",
+  "private": true,
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "main": "servidor.js",
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leron8/gobertec"
+  },
+  "keywords": [
+    "gobertec",
+    "app",
+    "api"
+  ],
+  "author": "Leonardo Gutiérrez Hernández",
+  "license": "ISC",
+  "dependencies": {
+    "morgan": "~1.7.0",
+    "body-parser": "~1.15.2",
+    "express": "~4.14.0",
+    "validate.js": "~0.10.0",
+    "jwt-simple": "^0.4.1"
+  }
+}

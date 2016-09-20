@@ -1,0 +1,24 @@
+
+    <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
+
+      <form class="form-signin" novalidate="">
+        <h2 class="form-signin-heading text-center">Iniciar sesión</h2>
+        <label for="inputEmail" class="sr-only">Usuario</label>
+        <input type="text" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus ng-model="usuario">
+        <label for="inputPassword" class="sr-only">Contraseña</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required ng-model="password">
+        <div class="checkbox">
+
+          <label>
+            <input type="checkbox" value="remember-me"> Recordarme
+          </label>
+        </div>
+        <div class="text-danger" ng-show="error">
+          <p>
+            usuario y password incorrecto
+          </p>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="login()">Ingresar</button>
+      </form>
+
+    </div>
