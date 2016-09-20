@@ -29,7 +29,7 @@ app.use(bodyParser.json({limit: '25mb'}));
 
 //app.use('/', require('./rutas'));
 
-app.set('port', process.env.HEALTHY_MEALS_APP_PORT_8080_TCP_PORT || 3003);
+app.set('port', process.env.GOBERTEC_PORT_8080_TCP_PORT || 3003);
 
 /*db.conectar(function(err) {
   if (err) {
