@@ -29,8 +29,7 @@ app.use(bodyParser.json({limit: '25mb'}));
 
 //app.use('/', require('./rutas'));
 
-app.set('port', process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 3003);
-app.set('ip', process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
+app.set('port', process.env.HEALTHY_MEALS_APP_PORT_8080_TCP_PORT || 3003);
 
 /*db.conectar(function(err) {
   if (err) {
@@ -42,5 +41,5 @@ app.set('ip', process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
   }
 });*/
 
-app.listen(app.get('port'), app.get('ip'));
-console.log("Listening on port " + app.get('ip') + ":" + app.get('port'));
+app.listen(app.get('port'));
+console.log("Listening on port " + app.get('port'));
